@@ -1,0 +1,53 @@
+header{
+    width: 100%;
+    background: #07121A;
+    height: 10vh;
+}
+
+// MIXIN'S //
+
+@mixin propiedadIcon(){
+    margin: 25px 15px 15px 15px;
+    width: 30px;
+    height: 30px;
+    color: #D4DF9E;
+}
+
+.menuHeader{
+    display: flex;
+
+    li{
+        list-style: none;
+        display: flex;
+        align-items: center
+    }
+}
+
+.icon{
+@include propiedadIcon();
+}    
+
+.iconLight{
+    @include propiedadIcon();
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+// RESPONSIVE FOR LAPTOP //
+
+@media screen and (min-width: 768px) {
+    
+    .iconLight{
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .iconLight{
+        margin-right: 35px;
+    }
+    
+}

@@ -1,0 +1,32 @@
+/* GENERALS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .sectionGeneral{
+        display: flex;
+    }
+
+    Header, Footer{
+        display: flex;
+        align-items: center;
+        width: 10%;
+        height: 100vh;
+    }
+
+    Header .menuHeader, Footer .menuFooter{
+        flex-direction: column;
+    }
+
+    .navigation{
+        margin: 0 auto;
+    }
+
+    Main{
+        width: 80%;
+        height: 100vh;
+    }
+}

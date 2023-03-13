@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+main {
+    background: #07121A;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// VARIABLES /7
+$fontSecond: 'Poppins', sans-serif;
+
+.aboutMe {
+    line-height: 0.9;
+    color: #D4DF9E;
+    margin-left: 20px;
+    h4{
+        font-family: $fontSecond;
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 10px 0;
+    }
+    p{
+        font-family: $fontSecond;
+        line-height: 1.2;
+        font-size: 1.3em;
+        width: 90%;
+        margin: 20px 0;
+    }
+    h1{
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 2.5px;
+        font-size: 4em;
+    }
+
+    h2{
+        padding: 0;
+        font-size: 2.3em;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1;
+    }
+}
+
+.message{
+    font-size: 1.1em;
+    font-family: 'Poppins' , sans-serif;
+    color: #F18805;
+
+}
+
+#buttonContact{
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #D4DF9E;
+    background: #7B0D1E;
+    border: none;
+    border-radius: 5px;
+}
+
+// RESPONSIVE IPAD //
+
+@media screen and (min-width: 768px) {
+    #buttonContact {
+        width: 300px;
+        height: 60px;
+        font-size: 35px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .aboutMe{
+        h1{
+            font-size: 5em;
+        }
+
+        h4{
+            font-size: 2em;
+        }
+
+        h2{
+            font-size: 4em;
+        }
+
+        p{
+            width: 70%;
+            font-size: 1.7em;
+            margin-bottom: 30px;
+        }
+    }
+}
